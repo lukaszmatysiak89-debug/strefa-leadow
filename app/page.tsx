@@ -325,46 +325,47 @@ export default function LandingPage() {
   name="contact"
   method="POST"
   data-netlify="true"
+  action="/success"
   className="space-y-5"
 >
-<input type="hidden" name="form-name" value="contact" />
+  <input type="hidden" name="form-name" value="contact" />
 
+  <input
+    type="text"
+    name="name"
+    placeholder="Imię i nazwisko"
+    className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
+  />
 
-              <input
-                type="text"
-                name="name"
-                placeholder="Imię i nazwisko"
-                className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
-              />
+  <input
+    type="email"
+    name="email"
+    placeholder="Adres e-mail"
+    className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
+  />
 
-              <input
-                type="email"
-                name="email"
-                placeholder="Adres e-mail"
-                className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
-              />
+  <input
+    type="text"
+    name="company"
+    placeholder="Branża / firma"
+    className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
+  />
 
-              <input
-                type="text"
-                name="company"
-                placeholder="Branża / firma"
-                className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
-              />
+  <textarea
+    name="message"
+    placeholder="Napisz krótko, czego potrzebujesz"
+    className="w-full border border-gray-300 rounded-2xl px-5 py-4 min-h-32 outline-none focus:border-blue-600"
+  ></textarea>
 
-              <textarea
-              name="message"
-                placeholder="Napisz krótko, czego potrzebujesz"
-                className="w-full border border-gray-300 rounded-2xl px-5 py-4 min-h-32 outline-none focus:border-blue-600"
-              />
-
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="w-full bg-gradient-to-r from-blue-600 to-slate-900 text-white px-8 py-4 rounded-2xl font-bold text-lg"
-              >
-                Wyślij zapytanie
-              </motion.button>
-            </form>
+  <motion.button
+    type="submit"
+    whileHover={{ scale: 1.03 }}
+    whileTap={{ scale: 0.97 }}
+    className="w-full bg-gradient-to-r from-blue-600 to-slate-900 text-white px-8 py-4 rounded-2xl font-bold text-lg"
+  >
+    Wyślij zapytanie
+  </motion.button>
+</form>
           </div>
         </div>
       </section>
