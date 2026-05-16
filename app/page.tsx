@@ -322,10 +322,27 @@ export default function LandingPage() {
             </p>
 
             <form
-  action="https://formspree.io/f/mdajnndy"
+  ction="https://api.staticforms.xyz/submit"
   method="POST"
   className="space-y-5"
 >
+  <input
+  type="hidden"
+  name="accessKey"
+  value="sf_9de63f532c42539ce1eba184"
+/>
+
+<input
+  type="hidden"
+  name="subject"
+  value="Nowy lead - Strefa Leadów"
+/>
+
+<input
+  type="hidden"
+  name="redirectTo"
+  value="https://strefaleadow.netlify.app/"
+/>
               <input
                 type="text"
                 name="name"
