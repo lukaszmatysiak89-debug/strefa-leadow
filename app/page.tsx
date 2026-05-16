@@ -322,7 +322,7 @@ export default function LandingPage() {
             </p>
 
             <form
-  ction="https://api.staticforms.xyz/submit"
+  action="https://api.staticforms.xyz/submit"
   method="POST"
   className="space-y-5"
 >
