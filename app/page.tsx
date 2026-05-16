@@ -329,17 +329,7 @@ export default function LandingPage() {
 >
 <input type="hidden" name="form-name" value="contact" />
 
-<input
-  type="hidden"
-  name="subject"
-  value="Nowy lead - Strefa Leadów"
-/>
 
-<input
-  type="hidden"
-  name="redirectTo"
-  value="https://strefaleadow.netlify.app/"
-/>
               <input
                 type="text"
                 name="name"
