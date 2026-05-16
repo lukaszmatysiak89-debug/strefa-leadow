@@ -322,15 +322,12 @@ export default function LandingPage() {
             </p>
 
             <form
-  action="https://api.staticforms.xyz/submit"
+  name="contact"
   method="POST"
+  data-netlify="true"
   className="space-y-5"
 >
-  <input
-  type="hidden"
-  name="accessKey"
-  value="sf_9de63f532c42539ce1eba184"
-/>
+<input type="hidden" name="form-name" value="contact" />
 
 <input
   type="hidden"
