@@ -321,26 +321,34 @@ export default function LandingPage() {
               Wypełnij formularz, a przygotujemy dla Ciebie pierwszą analizę możliwości pozyskiwania klientów.
             </p>
 
-            <form className="space-y-5">
+            <form
+  action="https://formspree.io/f/mdajnndy"
+  method="POST"
+  className="space-y-5"
+>
               <input
                 type="text"
+                name="name"
                 placeholder="Imię i nazwisko"
                 className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
               />
 
               <input
                 type="email"
+                name="email"
                 placeholder="Adres e-mail"
                 className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
               />
 
               <input
                 type="text"
+                name="company"
                 placeholder="Branża / firma"
                 className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
               />
 
               <textarea
+              name="message"
                 placeholder="Napisz krótko, czego potrzebujesz"
                 className="w-full border border-gray-300 rounded-2xl px-5 py-4 min-h-32 outline-none focus:border-blue-600"
               />
