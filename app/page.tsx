@@ -93,7 +93,7 @@ export default function LandingPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-5 py-3 rounded-full text-lg font-bold mb-6">
-                Lead Generation dla firm budowlanych, medycznych i nie tylko
+                Lead generation dla firm budowlanych, medycznych i nie tylko
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 tracking-tight">
@@ -321,19 +321,34 @@ export default function LandingPage() {
               Wypełnij formularz, a przygotujemy dla Ciebie pierwszą analizę możliwości pozyskiwania klientów.
             </p>
 
-            <form
-  name="contact"
+ <form
+  action="https://api.web3forms.com/submit"
   method="POST"
-  data-netlify="true"
-  action="/success"
   className="space-y-5"
 >
-  <input type="hidden" name="form-name" value="contact" />
+  <input
+    type="hidden"
+    name="access_key"
+    value="18f5f87d-5482-4202-bb65-54bfe1d92ced"
+  />
+
+  <input
+    type="hidden"
+    name="subject"
+    value="Nowy lead - Strefa Leadów"
+  />
+
+  <input
+    type="hidden"
+    name="redirect"
+    value="https://strefaleadow.netlify.app/success"
+  />
 
   <input
     type="text"
     name="name"
     placeholder="Imię i nazwisko"
+    required
     className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
   />
 
@@ -341,6 +356,7 @@ export default function LandingPage() {
     type="email"
     name="email"
     placeholder="Adres e-mail"
+    required
     className="w-full border border-gray-300 rounded-2xl px-5 py-4 outline-none focus:border-blue-600"
   />
 
@@ -354,6 +370,7 @@ export default function LandingPage() {
   <textarea
     name="message"
     placeholder="Napisz krótko, czego potrzebujesz"
+    required
     className="w-full border border-gray-300 rounded-2xl px-5 py-4 min-h-32 outline-none focus:border-blue-600"
   ></textarea>
 
