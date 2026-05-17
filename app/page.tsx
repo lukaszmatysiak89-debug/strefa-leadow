@@ -341,7 +341,7 @@ export default function LandingPage() {
   <input
     type="hidden"
     name="redirect"
-    value="https://strefaleadow.netlify.app/success"
+    value="https://strefa-leadow.netlify.app/success"
   />
 
   <input
