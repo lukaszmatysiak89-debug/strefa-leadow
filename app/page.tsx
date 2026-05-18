@@ -392,7 +392,7 @@ export default function LandingPage() {
 
       {/* CTA */}
       <section className="py-24" >
-        <div className="max-w-5xl mx-auto px-6" flex flex-wrap gap-4 justify-center lg:justify-start>
+        <div className="max-w-5xl mx-auto px-6">
           <div className="bg-gradient-to-r from-slate-900 to-blue-700 rounded-[40px] p-14 text-center text-white shadow-2xl">
             <p className="uppercase tracking-[0.3em] text-blue-200 font-semibold mb-4">Gotowy na wzrost?</p>
             <h2 className="text-5xl font-black mb-6 leading-tight">Sprawdźmy, jak możemy zwiększyć liczbę leadów w Twojej firmie.</h2>
@@ -400,23 +400,28 @@ export default function LandingPage() {
               Umów bezpłatną konsultację. Przeanalizujemy Twoją sytuację, ofertę i możliwości pozyskiwania klientów.
             </p>
            
- <motion.a
+ <div className="flex flex-wrap justify-center gap-4">
+
+  <motion.a
     href="https://calendly.com/strefaleadow/30min"
     target="_blank"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-   className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
+    className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
   >
     Umów darmową konsultację
   </motion.a>
-             <motion.a
+
+  <motion.a
     href="#kontakt"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
+    className="inline-block border border-white text-white hover:bg-white hover:text-slate-900 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
   >
     Napisz do nas
   </motion.a>
+
+</div>
 
           </div>
         </div>
