@@ -79,7 +79,7 @@ export default function LandingPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <img
-              src="/logo.png"
+              src="/logo3.png"
               alt="Strefa Leadów Logo"
               className="w-full max-w-[1100px] h-auto"
             />
