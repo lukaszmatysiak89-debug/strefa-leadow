@@ -391,8 +391,8 @@ export default function LandingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="py-24" >
+        <div className="max-w-5xl mx-auto px-6" flex flex-wrap gap-4 justify-center lg:justify-start>
           <div className="bg-gradient-to-r from-slate-900 to-blue-700 rounded-[40px] p-14 text-center text-white shadow-2xl">
             <p className="uppercase tracking-[0.3em] text-blue-200 font-semibold mb-4">Gotowy na wzrost?</p>
             <h2 className="text-5xl font-black mb-6 leading-tight">Sprawdźmy, jak możemy zwiększyć liczbę leadów w Twojej firmie.</h2>
