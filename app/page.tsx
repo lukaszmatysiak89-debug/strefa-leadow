@@ -106,23 +106,24 @@ export default function LandingPage() {
               </p>
 
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <motion.a
-                  href="#kontakt"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-blue-600 to-slate-900 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl transition"
-                >
-                  Umów darmową konsultację
-                </motion.a>
+                 <motion.a
+    href="#kontakt"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="bg-gradient-to-r from-blue-600 to-slate-900 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl transition"
+  >
+    Napisz do nas
+  </motion.a>
 
-                <motion.a
-                  href="#oferta"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border border-gray-300 hover:border-blue-500 hover:text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg transition bg-white"
-                >
-                  Zobacz ofertę
-                </motion.a>
+  <motion.a
+    href="https://calendly.com/strefaleadow/30min"
+    target="_blank"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-2xl font-semibold text-lg transition"
+  >
+    Umów darmową konsultację
+  </motion.a>
               </div>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-10 mt-14">
