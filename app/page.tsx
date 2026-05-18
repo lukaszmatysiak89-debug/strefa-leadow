@@ -64,7 +64,7 @@ export default function LandingPage() {
       q: "Ile trwa uruchomienie kampanii?",
       a: "Zazwyczaj kampanię można przygotować i uruchomić po ustaleniu oferty, grupy docelowej, budżetu i materiałów reklamowych.",
     },
-  ];
+  ]; 
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -79,7 +79,7 @@ export default function LandingPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <img
-              src="/logo3.png"
+              src="/logo.png"
               alt="Strefa Leadów Logo"
               className="w-full max-w-[1100px] h-auto"
             />
