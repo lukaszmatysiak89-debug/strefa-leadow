@@ -416,7 +416,7 @@ export default function LandingPage() {
     href="#kontakt"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    className="inline-block border border-white text-white hover:bg-white hover:text-slate-900 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
+    className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
   >
     Napisz do nas
   </motion.a>
