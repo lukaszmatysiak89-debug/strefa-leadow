@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Facebook, Instagram } from "lucide-react";
 
 export default function LandingPage() {
   const services = [
@@ -79,7 +80,7 @@ export default function LandingPage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <img
-              src="/logo1.png"
+              src="/logo2.png"
               alt="Strefa Leadów Logo"
               className="w-full max-w-[1100px] h-auto"
             />
@@ -92,9 +93,6 @@ export default function LandingPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-5 py-3 rounded-full text-lg font-bold mb-6">
-                Lead generation dla firm budowlanych, medycznych i nie tylko
-              </div>
 
               <h1 className="text-5xl lg:text-7xl font-black leading-tight mb-8 tracking-tight">
                 Zamieniamy reklamy w
@@ -110,7 +108,8 @@ export default function LandingPage() {
 
   <motion.a
     href="https://calendly.com/strefaleadow/30min"
-    target="_blank"
+      target="_blank"
+  rel="noopener noreferrer"
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
     className="bg-gradient-to-r from-blue-600 to-slate-900 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl transition"
@@ -245,6 +244,45 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+ {/* CTA */}
+      <section className="py-24" >
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="bg-gradient-to-r from-slate-900 to-blue-700 rounded-[40px] p-14 text-center text-white shadow-2xl">
+            <p className="uppercase tracking-[0.3em] text-blue-200 font-semibold mb-4">Gotowy na wzrost?</p>
+            <h2 className="text-5xl font-black mb-6 leading-tight">Sprawdźmy, jak możemy zwiększyć liczbę leadów w Twojej firmie.</h2>
+            <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed">
+              Umów bezpłatną konsultację. Przeanalizujemy Twoją sytuację, ofertę i możliwości pozyskiwania klientów.
+            </p>
+           
+ <div className="flex flex-wrap justify-center gap-4">
+
+  <motion.a
+    href="https://calendly.com/strefaleadow/30min"
+    target="_blank"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
+  >
+    Umów darmową konsultację
+  </motion.a>
+
+  <motion.a
+    href="#kontakt"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
+  >
+    Napisz do nas
+  </motion.a>
+
+</div>
+
+          </div>
+        </div>
+      </section>
+
+
+
 
       {/* Industries */}
       <section className="py-24 bg-white">
@@ -329,6 +367,11 @@ export default function LandingPage() {
   method="POST"
   className="space-y-5"
 >
+   <input
+    type="hidden"
+    name="from_name"
+    value="Strefa Leadów"
+  />
   <input
     type="hidden"
     name="access_key"
@@ -390,42 +433,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-24" >
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="bg-gradient-to-r from-slate-900 to-blue-700 rounded-[40px] p-14 text-center text-white shadow-2xl">
-            <p className="uppercase tracking-[0.3em] text-blue-200 font-semibold mb-4">Gotowy na wzrost?</p>
-            <h2 className="text-5xl font-black mb-6 leading-tight">Sprawdźmy, jak możemy zwiększyć liczbę leadów w Twojej firmie.</h2>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Umów bezpłatną konsultację. Przeanalizujemy Twoją sytuację, ofertę i możliwości pozyskiwania klientów.
-            </p>
-           
- <div className="flex flex-wrap justify-center gap-4">
-
-  <motion.a
-    href="https://calendly.com/strefaleadow/30min"
-    target="_blank"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
-  >
-    Umów darmową konsultację
-  </motion.a>
-
-  <motion.a
-    href="#kontakt"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="inline-block bg-white text-slate-900 hover:bg-gray-100 transition px-10 py-5 rounded-2xl font-bold text-lg shadow-xl"
-  >
-    Napisz do nas
-  </motion.a>
-
-</div>
-
-          </div>
-        </div>
-      </section>
+     
 
       {/* Footer */}
       <footer className="border-t border-gray-200 py-10">
@@ -435,11 +443,46 @@ export default function LandingPage() {
             <p className="text-gray-500 mt-2">Lead generation dla firm, które chcą pozyskiwać klientów przewidywalnie.</p>
           </div>
 
-          <div className="flex gap-6 text-gray-500 font-medium">
-            <a href="#oferta" className="hover:text-blue-600 transition">Oferta</a>
-            <a href="#proces" className="hover:text-blue-600 transition">Proces</a>
-            <a href="#kontakt" className="hover:text-blue-600 transition">Kontakt</a>
-          </div>
+  <div className="flex flex-wrap items-center gap-6 text-gray-500 font-medium">
+  <a href="#oferta" className="hover:text-blue-600 transition">
+    Oferta
+  </a>
+
+  <a href="#proces" className="hover:text-blue-600 transition">
+    Proces
+  </a>
+
+  <a href="#kontakt" className="hover:text-blue-600 transition">
+    Kontakt
+  </a>
+
+  <a
+    href="/polityka-prywatnosci"
+    className="hover:text-blue-600 transition"
+  >
+    Polityka prywatności
+  </a>
+
+  <a
+    href="https://www.facebook.com/profile.php?id=61589909435806"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-blue-600 transition"
+  >
+    <Facebook size={20} />
+    Facebook
+  </a>
+
+  <a
+    href="https://www.instagram.com/strefaleadow/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-blue-600 transition"
+  >
+    <Instagram size={20} />
+    Instagram
+  </a>
+</div>
         </div>
       </footer>
     </div>
