@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Facebook, Instagram } from "lucide-react";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 export default function LandingPage() {
   const services = [
@@ -469,7 +469,7 @@ export default function LandingPage() {
     rel="noopener noreferrer"
     className="flex items-center gap-2 hover:text-blue-600 transition"
   >
-    <Facebook size={20} />
+    <FaFacebookF size={20} />
     Facebook
   </a>
 
@@ -479,7 +479,7 @@ export default function LandingPage() {
     rel="noopener noreferrer"
     className="flex items-center gap-2 hover:text-blue-600 transition"
   >
-    <Instagram size={20} />
+    <FaInstagram size={20} />
     Instagram
   </a>
 </div>
